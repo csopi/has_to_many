@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Folder:</strong>
+  <%= @entry.folder %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @entry.date %>
+</p>
+
+<p>
+  <strong>Theme:</strong>
+  <%= @entry.theme %>
+</p>
+
+<p>
+  <strong>Spend time:</strong>
+  <%= @entry.spend_time %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @entry.user.name %>
+</p>
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>

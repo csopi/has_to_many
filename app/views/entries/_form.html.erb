@@ -1,0 +1,15 @@
+<%= simple_form_for(@entry) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :folder, collection: [ "I.kötet", "II.kötet", "III.kötet"], :as => :radio %> 
+    <%= f.input :date %>
+    <%= f.input :theme, :as => :text %>
+    <%= f.input :spend_time, collection: 1..200, :include_blank => false %>
+    <%= f.association :user, :as => :radio %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

@@ -1,0 +1,1 @@
+A one-to-many association gyakorlása.
